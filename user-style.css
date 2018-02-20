@@ -1,0 +1,76 @@
+/* hide usermode markers */
+
+.mode_pill {
+    display: none !important;
+}
+
+/* remove background from my own messages */
+
+div.log div.self {
+    background: transparent !important;
+}
+
+/* render users differently in the channel selector */
+
+.bufferList .conversations .active span.buffer {
+    font-style: italic;
+}
+
+.bufferList .conversations .selected span.buffer {
+    color: #fff !important;
+}
+
+/* add a little more space between the author and the message text */
+
+.authorWrap {
+    margin-right: 2px!important;
+}
+
+/* reduce the size of pastebins */
+
+.ace_text-layer {
+    font-size: 12px !important;
+}
+
+/* remove irc colours */
+
+span.white, span.white>a,
+span.black, span.black>a,
+span.navy, span.navy>a,
+span.green, span.green>a,
+span.red, span.red>a,
+span.maroon, span.maroon>a,
+span.purple, span.purple>a,
+span.orange, span.orange>a,
+span.yellow, span.yellow>a,
+span.lime, span.lime>a,
+span.teal, span.teal>a,
+span.cyan, span.cyan>a,
+span.blue, span.blue>a,
+span.magenta, span.magenta>a,
+span.grey, span.grey>a,
+span.silver, span.silver>a { color: inherit !important; }
+
+span.bg-white, span.bg-black, span.bg-navy,
+span.bg-green, span.bg-red, span.bg-maroon,
+span.bg-purple, span.bg-orange, span.bg-yellow,
+span.bg-lime, span.bg-teal, span.bg-cyan,
+span.bg-blue, span.bg-magenta, span.bg-grey,
+span.bg-silver { background-color: inherit !important; }
+
+/* remove comic sans */
+
+span.content span[style*="font-family"] {
+    font-family: inherit !important;
+}
+
+/* channel notices should not look like messages where i am mentioned */
+
+div.log div.notice {
+    background-color: inherit !important;
+    font-style: italic !important;
+}
+div.log div.notice span.content {
+    font-family: inherit !important;
+    font-size: inherit !important;
+}
